@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  background-color: #cfcfcf;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+  color: #6b6b6b;
+}
+
+.form {
+  border-radius: 13px;
+  padding: 100px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  color: #7a7a7a;
+}
+
+.input {
+  position: relative;
+  padding: 5px;
+  border-radius: 5px;
+  background: #f8f8f8;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-bottom: 2px solid rgb(85, 205, 221);
+  background: #f1f0f0;
+}
+
+span {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+}
+
+button {
+  display: flex;
+  position: relative;
+  left: 70px;
+  top: 25px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px;
+  width: 45%;
+  cursor: pointer;
+  font-size: 15px;
+  background: rgb(50, 166, 182);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(58, 176, 192, 0.8);
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    flex-direction: column;
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  h1 {
+    bottom: 10px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  span {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  button {
+    position: relative;
+    left: 50px;
+    top: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+}
